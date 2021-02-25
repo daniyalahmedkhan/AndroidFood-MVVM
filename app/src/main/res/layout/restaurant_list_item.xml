@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="restaurant"
+            type="com.androidfood.mvvm.data.model.RestaurantItem" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="@dimen/_4sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/restaurant_item_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/pizza_img" />
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:src="@drawable/ic_favorite_heart_white" />
+
+            <TextView
+                android:id="@+id/restaurant_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/restaurant_item_img"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:text="Ehsan's Restaurant"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/restaurant_item_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/restaurant_item_name"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:text="Chip Lactation Salid"
+                android:textColor="@color/grey_30"
+                android:maxLines="4"
+                android:ellipsize="end"/>
+
+            <RatingBar
+                android:id="@+id/restaurant_item_rating"
+                style="@android:style/Widget.DeviceDefault.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/restaurant_item_desc"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:progressTint="@color/colorYellow"
+                android:rating="1"
+                android:transformPivotX="10dp"
+                android:transformPivotY="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/restaurant_item_desc"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_toRightOf="@+id/restaurant_item_rating"
+                android:text="4.00"
+                android:id="@+id/txtRating"/>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

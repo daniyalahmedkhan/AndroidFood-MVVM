@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_15sdp"
+    android:gravity="center"
+    android:background="@color/white">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please rate your experience"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/black"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type...."
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/black"
+        android:id="@+id/txtReview"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:backgroundTint="@color/colorPrimary"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:text="Delete"
+        android:id="@+id/delete"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:backgroundTint="@color/colorPrimary"
+        android:visibility="gone"/>
+
+
+
+</LinearLayout>

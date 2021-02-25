@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">AndroidFood-MVVM</string>
+    <string name="splash_text">© 2020 Mobile App. All Rights Reserved</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_desc">Login to your account using your email address or phone number</string>
+    <string name="signup_desc">Create your account using your phone number</string>
+    <string name="login_title">Welcome Back</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="change_password">Change Password</string>
+    <string name="change_pass_desc">Please provide all details to change password</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="otp_verification_desc">We have sent you OTP on your provided email address</string>
+    <string name="forgot_password_desc">Please enter a registered email address</string>
+    <string name="forgot_password_btn">Submit</string>
+    <string name="otp_verify">Verify</string>
+    <string name="signup_title">Create Account</string>
+    <string name="login_email_label">Email</string>
+    <string name="login_phone_label">Phone</string>
+    <string name="login_address_label">Address</string>
+    <string name="password">Password</string>
+    <string name="full_name">Full Name</string>
+    <string name="con_pass">Confirm Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_in">Sign in</string>
+    <string name="update_profile">Update</string>
+    <string name="search_restaurant">Search Restaurant</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="home_fragment_no_restaurant">No Restaurant found nearby. \n<b>Tab to search again</b></string>
+    <string name="find_food">No Restaurant found</string>
+    <string name="add_food_no_restaurant">No Restaurant Found. \n<b>Tab to create</b></string>
+    <string name="home_fragment_fav_restaurant">No Favorite Restaurants Added</string>
+
+    <!--    Restaurant-->
+    <string name="remove">Remove Restaurant</string>
+    <string name="add_food">Upload Menu</string>
+    <string name="add_food_desc">Upload your restaurant menu pic from Camera Or Gallery</string>
+
+
+    <string name="login_bottom_txt"><![CDATA[
+    <p>Don\'t have an Account? <u><font color=#FE1B24>Sign up</font></u></p>
+    ]]></string>
+    <string name="signup_bottom_txt"><![CDATA[
+    <p>Already have an Account? <u><font color=#FE1B24>Sign in</font></u></p>
+    ]]></string>
+    <string name="dummy_text">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </string>
+
+    <!--    <string name="google_id">264841084599-dasubn5d4375pduverghjk71rbsttnug.apps.googleusercontent.com</string>-->
+    <string name="google_id">136910058426-8i9cis8l93l83rku3t4uc09ddqldisi1.apps.googleusercontent.com</string>
+    <!--    <string name="google_id">AIzaSyAV0Zgi5et_lsj1eEVsvWLjG5AyNmneTnw</string>-->
+</resources>

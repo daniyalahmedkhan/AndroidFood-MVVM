@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <!-- Only view model required -->
+        <variable
+            name="vm"
+            type="com.androidfood.mvvm.vm.home.home.SearchViewModel" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".ui.home.HomeFragment">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/home_frg_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textCursorDrawable="@null"
+            android:visibility="gone"
+            app:iconifiedByDefault="false"
+            app:queryBackground="@null"
+            app:queryHint="Type to search for restaurant" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/home_frg_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textCursorDrawable="@null"
+            android:visibility="gone"
+            app:iconifiedByDefault="false"
+            app:queryBackground="@null"
+            app:queryHint="Type to category for restaurant" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_8" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_frg_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/TV_noRestaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:gravity="center|start"
+            android:text="@string/home_fragment_no_restaurant"
+            android:textSize="@dimen/_13sdp"
+            android:visibility="gone"
+
+            />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/shimmerLayout"
+                layout="@layout/user_restaurant_shimmer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+    </LinearLayout>
+</layout>
